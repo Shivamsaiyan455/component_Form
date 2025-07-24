@@ -1,0 +1,14 @@
+<app-welcome-menu></app-welcome-menu>
+
+<h1 class="login-title">Login</h1>
+
+
+<form>
+  <input type="text" name="username " placeholder="Username" [(ngModel)]="username" />
+  <input type="password" name="password" placeholder="Password" [(ngModel)]="password" />
+  <button (click)="login()" type="submit">Login</button>
+</form>
+
+
+<app-footer></app-footer>
+

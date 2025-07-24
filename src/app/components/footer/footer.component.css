@@ -1,0 +1,18 @@
+/* Footer Styles */
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  padding: 10px 20px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.footer__content p {
+  font-size: 13px;
+  color: #555555;
+  margin: 0;
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+}

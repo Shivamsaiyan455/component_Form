@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f2f5; /* Background color for areas not covered by image */
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  flex: 1; /* Takes available space between header and footer */
+  min-height: 400px; /* Minimum height to ensure image is visible */
+  overflow: hidden; /* Prevents overflow issues */
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintains aspect ratio while covering */
+  position: relative; /* Removed absolute positioning to stack naturally */
+  z-index: 1; /* Places image in front of overlay and content */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Optional: keeps overlay visible over image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1; /* Places overlay behind the image */
+}
+
+.content {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  position: absolute; /* Positions content absolutely within container */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers content over image */
+  z-index: -1; /* Places content behind the image */
+}
+
+.content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Improves readability */
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 350px; /* Limits form width for better fit */
+  z-index: -1; /* Places form behind the image */
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .image-container {
+    min-height: 300px; /* Reduced height for smaller screens */
+  }
+  .content h1 {
+    font-size: 2em; /* Smaller heading on mobile */
+  }
+  .login-form {
+    padding: 20px;
+    max-width: 90%; /* Full width on small screens */
+  }
+}
