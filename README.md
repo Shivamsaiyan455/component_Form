@@ -1,27 +1,90 @@
-# CompnentForm
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
 
-## Development server
+````markdown
+# 📦 ComponentForm
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+An Angular project demonstrating component creation, a **template-driven login form**, and a **reactive registration form** with validations and responsive design.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🔍 Overview
 
-## Build
+This project includes:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- ✅ Login Form (Template-driven)
+- ✅ Registration Form (Reactive)
+- ✅ Angular Component Structure
+- ✅ Form Validation
+- ✅ Responsive Layout
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🚀 Live Preview
 
-## Running end-to-end tests
+Run the app locally at:  
+**http://localhost:4200/**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## 📁 Repository
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+GitHub Link: [https://github.com/Shivamsaiyan455/component_Form](https://github.com/Shivamsaiyan455/component_Form)
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone the repo
+git clone https://github.com/Shivamsaiyan455/component_Form.git
+
+# Navigate to project folder
+cd component_Form
+
+# Install dependencies
+npm install
+
+# Start the development server
+ng serve
+````
+
+---
+
+## 🧩 Project Structure
+
+```
+src/
+├── app/
+│   ├── login/           # Template-driven login component
+│   ├── register/        # Reactive registration component
+│   └── app.module.ts    # Root module with Forms setup
+└── index.html
+```
+
+---
+
+## 🛠 Useful Commands
+
+| Task               | Command                                |
+| ------------------ | -------------------------------------- |
+| Run dev server     | `ng serve`                             |
+| Build project      | `ng build`                             |
+| Generate component | `ng generate component component-name` |
+| Run unit tests     | `ng test`                              |
+| Run e2e tests      | `ng e2e` *(if configured)*             |
+
+---
+
+## 📚 Further Help
+
+For more Angular CLI commands and options:
+
+```bash
+ng help
+```
+
+Or visit the official [Angular CLI Docs](https://angular.io/cli)
+
+---
+
+
